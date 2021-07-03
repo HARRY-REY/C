@@ -28,17 +28,16 @@ int main()
 
     printf("\nIngrese su nombre > ");
     gets(nombre);
-
-    printf("\nIngrese su edad > ");
+    printf("Ingrese su edad > ");
     scanf("%d", &a); // %d para recibir interos. & para guardar el valor en... este caso 'a'
-
-    printf("\nIngrese su estatura > ");
+    printf("Ingrese su estatura en m > ");
     scanf("%f", &b); // %f para recibir flotantes. & para guardar el valor en... este caso 'b'
 
     // %s imprime char, el %f flotantes pero %.2f impime 2 decimales después del punto decimal
-    printf("\n\t¡Hola %s! Usted tiene %d años y tiene una estatura de %.2f m \n\n", nombre, a, b);
+    printf("\n¡Hola %s! Usted tiene %d años y tiene una estatura de %.2f m \n\n", nombre, a, b);
 
+    /* Si se trabaja en ventana
     system("pause"); // Evita que le programa se cierre
-
     return 0; // Cierra el programa
+    */
 }
