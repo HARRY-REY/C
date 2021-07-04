@@ -6,22 +6,8 @@
 
 #include<stdio.h>
 
-// Agregamos librerias para caracteres en español
-#include<locale.h>
-#include<windows.h>
-
-// Establecer el idioma en español por medio de esta función
-void espanol()
-{
-    setlocale(LC_ALL, "spanish"); // cambia locale para linux
-    SetConsoleCP(1252); // cambia STDIN para windows
-    SetConsoleOutputCP(1252); // cambia STDOUT para winows
-}
-
 int main()
 {
-    espanol(); // La función entra en acción
-
     int a; // int utiliza valores interos 
     float b; // float utiliza valores con punto decimal
     char nombre[10]; // char utiliza caracteres como letras, [número de caracteres -1]
@@ -34,7 +20,7 @@ int main()
     scanf("%f", &b); // %f para recibir flotantes. & para guardar el valor en... este caso 'b'
 
     // %s imprime char, el %f flotantes pero %.2f impime 2 decimales después del punto decimal
-    printf("\n¡Hola %s! Usted tiene %d años y tiene una estatura de %.2f m \n\n", nombre, a, b);
+    printf("\n%cHola %s! Usted tiene %d a%cos y tiene una estatura de %.2f m \n\n", 173, nombre, a, 164, b);
 
     /* Si se trabaja en ventana
     system("pause"); // Evita que le programa se cierre
